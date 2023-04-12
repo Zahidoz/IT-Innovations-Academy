@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.lesson-card {
+  padding: 20px 10px;
+  width: 380px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+.lesson-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lesson-card .card-header img {
+  max-width: 80px;
+}
+.lesson-card .card-header .header-txt span {
+  font-size: 14px;
+  color: gray;
+}
+.lesson-card .card-header .header-txt h2 {
+  color: #5e5bfb;
+  font-size: 28px;
+}
+.lesson-card .line {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.257);
+}
+.lesson-card ul {
+  padding-left: 25px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: start;
+}
+.lesson-card ul li {
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  color: rgba(92, 92, 94, 0.776);
+  font-weight: 400;
+}
+.lesson-card ul li::before {
+  content: "•";
+  color: #5e5bfb;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.3em;
+  margin-left: -1em;
+}
+.lesson-card button {
+  padding: 8px 18px;
+  font-size: 18px;
+  color: #5e5bfb;
+  border: 1px solid #5e5bfb;
+  border-radius: 8px;
+  background: transparent;
+  transition: 0.2s;
+}
+.lesson-card button:hover {
+  color: #fff;
+  background: #5e5bfb;
+}/*# sourceMappingURL=style.css.map */

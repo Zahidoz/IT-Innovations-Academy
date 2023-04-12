@@ -1,0 +1,71 @@
+.lesson-card {
+  padding: 2em 1em;
+  width: 38em;
+  display: flex;
+  gap: 2.8em;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+  border: .1em solid transparent;
+  border-radius: 1.2em;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    img {
+      max-width: 8em;
+    }
+    .header-txt {
+      span {
+        font-size: 1.4em;
+        color: gray;
+      }
+      h2 {
+        color: #5e5bfb;
+        font-size: 2.8em;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.257);
+  }
+  ul {
+    padding-left: 2.5em;
+    display: flex;
+    gap: .8em;
+    flex-direction: column;
+    align-items: start;
+    li {
+      letter-spacing: .13em;
+      font-size: 1.8em;
+      color: rgba(92, 92, 94, 0.776);
+      font-weight: 400;
+      &::before {
+        content: "\2022";
+        color: #5e5bfb;
+        font-weight: bold;
+        display: inline-block;
+        width: 1.3em;
+        margin-left: -1em;
+      }
+    }
+  }
+  button {
+    padding: .6em 1em;
+    font-size: 2em;
+    color: #5e5bfb;
+    border:.06em solid #5e5bfb;
+    border-radius: .8em;
+    background: transparent;
+    transition: 0.2s;
+    &:hover{
+       color: #fff;
+      background: #5e5bfb;
+    }
+  }
+  @media screen and (max-width:400px) {
+      font-size: 2.3vw;
+  }
+}

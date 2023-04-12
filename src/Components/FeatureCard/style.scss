@@ -1,0 +1,49 @@
+ .feature-card {
+        padding: 2em 1em;
+        max-width: 33em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: .3s;
+        border: 1px solid transparent;
+        border-radius: 1.2em;
+        &:hover {
+          box-shadow: 0 0 1em rgba(110, 120, 131, 0.261);
+           button{
+            background: #5E5BFB;
+            color: #fff;
+          }
+        }
+        img {
+          height: 16em; 
+        }
+        h3 {
+          font-size: 3em;
+          font-weight: 500;
+          margin: 1em 0 0 0;
+          color: rgb(14, 16, 82);
+          letter-spacing: .1em;
+        }
+        p {
+          padding: 0 .2em .2em 0;
+          font-size: 1.6em;
+          text-align: center;
+          color:#17104fa3;
+          letter-spacing: 0.08em;
+          margin: .7em 0 .7em 0;
+        }
+        button {
+          padding: .4em 1.3em;
+          font-size: 1.8em;
+          color: #5E5BFB;
+          border: .08em solid #5E5BFB;
+          border-radius: .8em;
+          background: transparent;
+          transition: .2s;
+         
+        }
+        @media screen and (max-width:400px){
+            font-size: 2.6vw;
+        }
+}

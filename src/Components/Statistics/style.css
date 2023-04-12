@@ -1,0 +1,24 @@
+.statistic-box {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  padding: 40px 20px;
+}
+.statistic-box img {
+  max-width: 120px;
+  max-height: 120px;
+}
+.statistic-box .txt-wrapper {
+  padding-bottom: 8px;
+}
+.statistic-box .txt-wrapper span {
+  font-size: 18px;
+  color: rgb(165, 165, 165);
+  font-weight: 400;
+}
+.statistic-box .txt-wrapper h2 {
+  color: #5E5BFB;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}/*# sourceMappingURL=style.css.map */

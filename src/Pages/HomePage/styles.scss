@@ -1,0 +1,79 @@
+.homeP {
+  #HeaderTxt {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin: 30px 0 0 0;
+    color: #17104fa3;
+  }
+  #SubHeaderTxt {
+    color: gray;
+    font-family: 300;
+    letter-spacing: 0.8px;
+    text-align: center;
+    font-size: 16px;
+    span {
+      color: #5e5bfb;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .features-s {
+    padding: 40px 10px;
+    .container {
+      padding: 40px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+  .lessons-card-s {
+    padding: 40px 20px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+  .statistics-s {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 20px;
+      @media screen and (max-width:1200px){
+        justify-content: center;
+      }
+      @media screen and (max-width:996px){
+        justify-content: space-evenly;
+        gap: 5px;
+      }
+    }
+  }
+  .projects-s {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+  }
+  .teacherCards-s {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+  }
+}

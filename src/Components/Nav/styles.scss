@@ -1,0 +1,125 @@
+@mixin flex($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+nav {
+  font-size: 10px;
+  padding: 3em 4em;
+  position: relative;
+  .nav-bg{
+    background-image: url('../../assets/img/background/header-background.svg');
+    height: 700px;
+    width: 100%;
+    max-width: 1350px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
+  .container {
+    @include flex(2em);
+    justify-content: space-between;
+    position: relative;
+    h1 {
+      letter-spacing: 0.03em;
+      font-size: 3.4em;
+      font-weight: 600;
+      color: #5E5BFB;
+    }
+    ul {
+      @include flex(3em);
+      li {
+        font-size: 1.5em;
+        color: 4318ff;
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        transition: 0.2s;
+        color: #8982a9;
+        &:hover {
+          border-color: #5E5BFB;
+          color: #5E5BFB;
+        }
+      }
+    }
+    .btn-c {
+      @include flex(2em);
+      button {
+        padding: 0.6em 1.3em;
+        font-weight: 500;
+        font-size: 1.6em;
+        color: #5E5BFB;
+        letter-spacing: .1em;
+      }
+      img {
+        max-width: 35px;
+        cursor: pointer;
+      }
+      #btn-signIn{
+        font-weight: 600;
+
+        }
+      #btn-signUp {
+        border: 2px solid #5e5bfbb8;
+        border-radius: 8px;
+        transition: 0.2s;
+        &:hover {
+          background: #5E5BFB;
+          color: #fff;
+        }
+      }
+    }
+    .res-nav {
+      position: absolute;
+      background: #E1EAF8;
+      min-height: 300px;
+      height: 90vh;
+      z-index: 99;
+      top: 150%;
+      right: -4em;
+      border-left: .1em solid rgba(57, 57, 57, 0.132);
+      padding: 3em;
+      display: none;
+      &.active-nav{
+        display: block;
+      }
+      .res-nav-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 2em;
+        h2 {
+          color: rgba(40, 75, 201, 0.879);
+          font-size: 2.2em;
+          font-weight: 400;
+          letter-spacing: .1em;
+        }
+        li {
+          font-size: 1.4em;
+          letter-spacing: .1em;
+          cursor: pointer;
+        }
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      ul {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .btn-c {
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    font-size: 8px;
+  }
+}

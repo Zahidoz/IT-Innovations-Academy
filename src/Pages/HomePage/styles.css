@@ -1,0 +1,52 @@
+.homeP .features-s {
+  padding: 40px 20px;
+}
+.homeP .features-s h2 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  margin: 30px 0 0 0;
+  color: rgba(23, 16, 79, 0.6392156863);
+}
+.homeP .features-s p {
+  color: gray;
+  font-family: 300;
+  letter-spacing: 0.8px;
+  text-align: center;
+  font-size: 16px;
+}
+.homeP .features-s p span {
+  color: #5E5BFB;
+  font-size: 18px;
+  font-weight: 600;
+}
+.homeP .features-s .container {
+  padding: 40px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.homeP .lessons-card-s {
+  padding: 40px 20px;
+}
+.homeP .lessons-card-s .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.homeP .statistics-s .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+.homeP .projects-s .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=styles.css.map */

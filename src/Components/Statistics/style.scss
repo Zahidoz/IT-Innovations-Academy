@@ -1,0 +1,32 @@
+.statistic-box {
+  display: flex;
+  align-items: end;
+  gap: 3em;
+  padding: 4em 2em;
+  img {
+    max-width: 120em;
+    max-height: 12em;
+  }
+  .txt-wrapper {
+    padding-bottom: 0.8em;
+    span {
+      font-size: 1.8em;
+      color: rgb(165, 165, 165);
+      font-weight: 400;
+    }
+    h2 {
+      color: #5e5bfb;
+      font-size: 4.4em;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+  }
+  @media screen and (max-width: 996px) {
+    min-width: 30em;
+  }
+@media screen and (max-width: 770px) {
+   font-size: 1.4vw;
+    padding: 3em 1em;
+
+  }
+}

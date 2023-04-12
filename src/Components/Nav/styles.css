@@ -1,0 +1,125 @@
+nav {
+  font-size: 10px;
+  padding: 3em 4em;
+  position: relative;
+}
+nav .nav-bg {
+  background-image: url("../../assets/img/background/header-background.svg");
+  height: 700px;
+  width: 100%;
+  max-width: 1350px;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  justify-content: space-between;
+  position: relative;
+}
+nav .container h1 {
+  letter-spacing: 0.1em;
+  font-size: 3.4em;
+  font-weight: 600;
+  color: #5E5BFB;
+}
+nav .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+nav .container ul li {
+  font-size: 1.5em;
+  color: 4318ff;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: 0.2s;
+  color: #8982a9;
+}
+nav .container ul li:hover {
+  border-color: #5E5BFB;
+  color: #5E5BFB;
+}
+nav .container .btn-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+nav .container .btn-c button {
+  padding: 0.6em 1.3em;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: #5E5BFB;
+  letter-spacing: 0.1em;
+}
+nav .container .btn-c img {
+  max-width: 35px;
+  cursor: pointer;
+}
+nav .container .btn-c #btn-signIn {
+  font-weight: 600;
+}
+nav .container .btn-c #btn-signUp {
+  border: 2px solid rgba(94, 91, 251, 0.7215686275);
+  border-radius: 8px;
+  transition: 0.2s;
+}
+nav .container .btn-c #btn-signUp:hover {
+  background: #5E5BFB;
+  color: #fff;
+}
+nav .container .res-nav {
+  position: absolute;
+  background: #E1EAF8;
+  min-height: 300px;
+  height: 80vh;
+  z-index: 99;
+  top: 150%;
+  right: 0;
+  border-left: 0.1em solid rgba(57, 57, 57, 0.132);
+  padding: 3em;
+  display: none;
+}
+nav .container .res-nav.active-nav {
+  display: block;
+}
+nav .container .res-nav .res-nav-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+nav .container .res-nav .res-nav-box h2 {
+  color: rgba(40, 75, 201, 0.879);
+  font-size: 2.2em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+nav .container .res-nav .res-nav-box li {
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  nav .container ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav .container .btn-c button {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  nav {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=styles.css.map */
