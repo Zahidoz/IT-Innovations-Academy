@@ -1,0 +1,412 @@
+.container {
+  section {
+    #header {
+      text-align: center;
+      font-size: 5em;
+      letter-spacing: 0.01em;
+      margin-top: 1em;
+      @media screen and (max-width: 500px) {
+        font-size: 10vw;
+      }
+    }
+    #subHeader {
+      text-align: center;
+      font-size: 1.9em;
+      color: gray;
+      letter-spacing: 0.02em;
+      padding: 0.5em;
+      @media screen and (max-width: 500px) {
+        font-size: 5vw;
+      }
+    }
+    &.hero-s {
+      padding: 8em 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .hero-card {
+        padding: 5em 3em;
+        background: rgba(255, 255, 255, 0.388);
+        border-radius: 2em;
+        border: 1px solid rgba(138, 138, 138, 0.157);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+        img {
+          max-width: 25em;
+        }
+        .txt-s {
+          padding-left: 3em;
+          border-left: 1px solid rgba(128, 128, 128, 0.286);
+          max-width: 70em;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 2em;
+          h1 {
+            font-size: 4em;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #61dbfb;
+          }
+          p {
+            font-size: 2em;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            color: gray;
+            span {
+              font-size: 1em;
+              font-weight: 600;
+              color: #61dbfb;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 8px;
+      }
+      @media screen and (max-width: 900px) {
+        padding: 3em 2em;
+        .hero-card {
+          flex-direction: column;
+          .txt-s {
+            border: none;
+            border-top: 1px solid rgba(138, 138, 138, 0.253);
+            padding-left: 0;
+            padding-top: 1.5em;
+            h1 {
+              font-size: 5em;
+            }
+          }
+          img {
+            font-size: 5px;
+          }
+        }
+      }
+    }
+
+    &.roadmap-s {
+      .road-s {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        padding-top: 7em;
+        .roadmap-c {
+          display: flex;
+          align-items: end;
+          padding: 2em;
+          justify-content: center;
+          gap: 4em;
+
+
+        }
+        .road-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2em;
+          max-width: 36em;
+          img {
+            max-width: 36em;
+          }
+          h1 {
+            text-align: center;
+            letter-spacing: 0.01em;
+            font-size: 3em;
+          }
+        }
+        @media screen and (max-width: 1040px) {
+          flex-direction: column;
+        }
+        @media screen and (max-width: 820px) {
+          .roadmap-c {
+            gap: 2em;
+            .step:hover {
+              .box {
+                width: 8em;
+                background: #e1eaf8;
+                h2 {
+                  visibility: hidden;
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 630px) {
+          .roadmap-c {
+            font-size: 1.5vw;
+          }
+        }
+      }
+    }
+
+    &.flipCards-s {
+      margin-bottom: 15em;
+      .calendar-s {
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2em;
+          padding: 2em;
+          justify-content: center;
+        }
+      }
+    }
+
+    &.lessonCalendar-s {
+      padding: 10em 0;
+
+      .container {
+        display: flex;
+        padding: 2em;
+        gap: 2em;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width: 1250px) {
+          .dayBox {
+            p {
+              padding-left: 0;
+              margin-left: auto;
+            }
+          }
+        }
+        @media screen and (max-width: 1060px) {
+          .dayBox {
+            min-width: 14em;
+          }
+        }
+      }
+    }
+    &.payment-s {
+      padding: 10em 0;
+      .container {
+        border-top: 1px solid rgba(128, 128, 128, 0.361);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.361);
+        padding: 7em 1em;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5em;
+        align-items: center;
+        img {
+          max-width: 30em;
+          max-height: 30em;
+        }
+        .payment-wrapper {
+          > h2 {
+            font-size: 5em;
+            letter-spacing: 0.01em;
+            margin-bottom: 1em;
+            color: #3b368c;
+            font-weight: 600;
+          }
+          .payment-c {
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: center;
+            .payment-card {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              gap: 2em;
+              border: 0.1em solid rgba(135, 135, 135, 0.19);
+              box-shadow: 0 0 0.6em rgba(50, 50, 50, 0.078);
+              border-radius: 1em;
+              width: 27em;
+              height: 23em;
+              padding: 2em;
+              transition: 0.4s;
+              align-items: center;
+              cursor: pointer;
+              h2 {
+                font-size: 3em;
+                color: #3b368c;
+                letter-spacing: 0.01em;
+              }
+              h1 {
+                font-size: 3.5em;
+                letter-spacing: 0.03em;
+                span {
+                  font-size: 0.6em;
+                  color: gray;
+                  font-weight: 500;
+                }
+              }
+              button {
+                padding: 0.5em 1em;
+                border-radius: 0.5em;
+                color: #fff;
+                margin: 0 auto;
+                font-size: 1.8em;
+                transition: 0.2s;
+                background: #3b368c;
+                font-weight: 500;
+                &:hover {
+                  background: #3b368c;
+                  color: #fff;
+                }
+              }
+              &:hover {
+                transform: scale(1.05);
+                background: #3b368c;
+                h1 {
+                  color: #fff;
+                  span {
+                    color: rgba(255, 255, 255, 0.761);
+                  }
+                }
+                h2 {
+                  color: #fff;
+                }
+                button {
+                  color: #3b368c;
+                  background: #fff;
+                }
+              }
+              @media screen and (max-width: 1000px) {
+                font-size: 1.1vw;
+              }
+              @media screen and (max-width: 720px) {
+                font-size: 1.5vw;
+              }
+              @media screen and (max-width: 500px) {
+                font-size: 2.5vw;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 1230px) {
+          .payment-wrapper {
+            h2 {
+              text-align: center;
+            }
+          }
+          img {
+            display: none;
+          }
+        }
+        
+      }
+    }
+    &.contact-s {
+      display: flex;
+      align-items: start;
+      gap: 5em;
+      justify-content: space-evenly;
+      .contact-c {
+        padding: 1em;
+        h1 {
+          font-size: 5em;
+          color: #3b368c;
+          letter-spacing: 0.02em;
+        }
+        p {
+          font-size: 2em;
+          color: #3b368c;
+          margin: 1em 0;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 2em;
+          width: 100%;
+          max-width: 40em;
+          input {
+            padding: 0.5em 1em;
+            background: none;
+            border: 2px solid transparent;
+            border-bottom: 2px solid #3a368c5f;
+            color: #3b368c;
+            font-size: 1.9em;
+            width: 100%;
+            transition: 0.5s;
+            &:focus {
+              border-bottom: 2px solid #3b368c;
+            }
+            &::placeholder {
+              color: #3b368c;
+            }
+          }
+          select {
+            padding: 0.5em 1em;
+            padding-right: 2em;
+            border: 1px solid #3b368c;
+            color: #3b368c;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            font-size: 1.9em;
+            background: none;
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+            width: 100%;
+          }
+          button {
+            padding: 0.5em 1em;
+            background: #3b368c;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            font-size: 2.2em;
+            width: 100%;
+          }
+        }
+      }
+      .map-c {
+
+        iframe {
+          border-radius: 2em;
+          box-shadow: 0 0 1em #3a368c6f;
+          margin-bottom: 1.5em;
+        }
+
+        p {
+          font-size: 2.2em;
+          letter-spacing: 0.05em;
+          color: rgb(0, 0, 0);
+          font-weight: 300;
+
+          span {
+            color: #3b368c;
+            letter-spacing: 0.03em;
+            font-weight: 600;
+            font-size: 1.2em;
+          }
+        }
+      }
+      @media screen and (max-width: 1400px) {
+        gap: 2em;
+        .map-c{
+          iframe{
+            width: 50vw;
+          }
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 8px;
+      }
+      @media screen and (max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        .contact-c{
+          padding: 1em;
+          h1{
+            font-size: 4em;
+          }
+        }
+        .map-c{
+          padding: 2em;
+          iframe{
+            width: 100%;
+            height: 40em;
+          }
+        }
+      }
+    }
+  }
+}

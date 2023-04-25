@@ -12,10 +12,19 @@
     letter-spacing: 0.8px;
     text-align: center;
     font-size: 16px;
+    padding: 0 1.5em;
     span {
       color: #5e5bfb;
       font-size: 18px;
       font-weight: 600;
+    }
+  }
+  @media screen and (max-width:560px){
+     #HeaderTxt {
+      font-size: 7vw; 
+     } 
+     #SubHeaderTxt {
+      
     }
   }
   .features-s {

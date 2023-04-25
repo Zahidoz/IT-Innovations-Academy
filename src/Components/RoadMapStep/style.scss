@@ -1,0 +1,58 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  cursor: pointer;
+  img {
+    max-width: 6em;
+  }
+  .box {
+    width: 8em;
+    background: #e1eaf8;
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    transition: 0.3s;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+
+      transition: 0.4s;
+      font-size: 2.5em;
+      color: #fff;
+    }
+    &.box1 {
+      height: 5em;
+    }
+    &.box2 {
+      height: 10em;
+    }
+    &.box3 {
+      height: 15em;
+    }
+    &.box4 {
+      height: 20em;
+    }
+    &.box5 {
+      height: 25em;
+    }
+    &.box6 {
+      height: 30em;
+    }
+  }
+  &:hover {
+    .box {
+      width: 16em;
+      background: #61dbfb;
+      h2 {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
